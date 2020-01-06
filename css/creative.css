@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Portfolio-site v0.0.1 (https://startbootstrap.com/template-overviews/creative)
+ * Start Bootstrap - Portfolio-site v0.0.1 ()
  * Copyright 2013-2020 Francis Nduamaka
  * Licensed under MIT (https://github.com/BlackrockDigital/francis-portfolio-site/blob/master/LICENSE)
  */
@@ -9555,6 +9555,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  background-color: #f1f1f1;
 }
 
 .text-white-75 {
@@ -9581,7 +9582,7 @@ hr.light {
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  border-radius: 10rem;
+  border-radius: 0.35rem;
 }
 
 .page-section {
@@ -9690,45 +9691,113 @@ header.masthead h1 {
   }
 }
 
-#portfolio .container-fluid {
-  max-width: 1920px;
+#portfolio span {
+  cursor: pointer;
 }
 
-#portfolio .container-fluid .portfolio-box {
-  position: relative;
-  display: block;
+#portfolio .portfolio-item {
+  margin-bottom: 25px;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+#portfolio .portfolio-item .portfolio-card {
+  background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-card img {
   width: 100%;
+  height: 180px;
+  padding: 10px;
+}
+
+#portfolio .portfolio-item .portfolio-card .portfolio-card-content {
+  padding: 10px;
+}
+
+#portfolio .portfolio-item .portfolio-card .portfolio-card-content p {
+  margin: 1rem 0;
+}
+
+#portfolio .portfolio-item .portfolio-card .portfolio-card-content .portfolio-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#portfolio .portfolio-item .portfolio-card .portfolio-card-content .portfolio-card-header h3 {
+  font-size: 1.25rem;
+}
+
+#portfolio .portfolio-item .portfolio-overlay {
+  background-color: #fff;
+  position: absolute;
+  overflow: hidden;
+  left: 15px;
+  right: 15px;
+  bottom: 0;
+  height: 0;
+}
+
+#portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 20px;
+  color: #000;
   height: 100%;
+  width: 100%;
+}
+
+#portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content .portfolio-overlay-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5;
+}
+
+#portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content .portfolio-overlay-header span {
+  font-size: 25px;
+  padding: 0 10px 10px;
+  cursor: pointer;
+}
+
+#portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content .portfolio-overlay-header h3 {
+  font-size: 1.25rem;
+}
+
+#portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content .portfolio-overlay-body {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: lower-alpha;
+}
+
+#portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content .portfolio-overlay-footer {
+  display: flex;
+  justify-content: center;
   position: absolute;
   bottom: 0;
+  height: 100px;
+  width: 100%;
   text-align: center;
-  opacity: 0;
-  color: #fff;
-  background: rgba(57, 16, 57, 0.9);
-  transition: opacity 0.25s ease;
-  text-align: center;
+  margin: 0 -20px;
+  padding: 20px;
+  border-top: 1px solid #ccc;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
+#portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content .portfolio-overlay-footer .link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #391039;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1.2rem;
-}
-
-#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
+#portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content .portfolio-overlay-footer .link:hover {
+  background-color: #110511;
+  text-decoration: none;
 }
 
 footer.footer {
