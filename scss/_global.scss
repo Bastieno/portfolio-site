@@ -3,6 +3,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  background-color: $bg-color
 }
 
 // Typography
@@ -32,10 +33,11 @@ hr.light {
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  border-radius: 10rem;
+  border-radius: 0.35rem;
 }
 
 // Page section padding
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
+  border-bottom: 1px solid #ddd;
 }

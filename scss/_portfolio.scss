@@ -1,42 +1,102 @@
-// Styling for the portfolio section
 #portfolio {
-  .container-fluid {
-    max-width: 1920px;
-    .portfolio-box {
-      position: relative;
-      display: block;
-      .portfolio-box-caption {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
+  span {
+    cursor: pointer;
+  }
+  .portfolio-item {
+    margin-bottom: 25px;
+    .portfolio-card {
+      background-color: #fff;
+      height: 100%;
+      box-shadow: 0 1px 3px rgba(1,1,1,.2);
+      img {
         width: 100%;
-        height: 100%;
-
-        position: absolute;
-        bottom: 0;
-
-        text-align: center;
-        opacity: 0;
-
-        color: $white;
-        background: fade-out($primary, .1);
-        transition: opacity 0.25s ease;
-        text-align: center;
-        .project-category {
-          font-family: $font-family-sans-serif;
-          font-size: 0.85rem;
-          font-weight: 600;
-          text-transform: uppercase;
+        height: 180px;
+        padding: 10px;
+      }
+      .portfolio-card-content {
+        padding: 16px;
+        p {
+          font-size: 14px;
+          margin: 1rem 0;
         }
-        .project-name {
-          font-size: 1.2rem;
+        .portfolio-card-header {
+          display: flex;
+          justify-content: space-between;
+          h3 {
+            font-size: 1.25rem;
+          }
         }
       }
-      &:hover {
-        .portfolio-box-caption {
-          opacity: 1;
+    }
+    .portfolio-overlay {
+      background-color: #fff;
+      position: absolute;
+      overflow: hidden;
+      left: 15px;
+      right: 15px;
+      bottom: 0;
+      height: 0;
+      .portfolio-overlay-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 20px;
+        color: #000;
+        height: 100%;
+        width: 100%;
+        .portfolio-overlay-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          line-height: 1.5;
+          span {
+            font-size: 25px;
+            padding: 0 10px 10px;
+            cursor: pointer;
+            &:hover {
+              color: #777
+            }
+          }
+          h3 {
+            color: $primary;
+            font-size: 1.25rem;
+          }
+        }
+        .portfolio-overlay-body {
+          margin: 0;
+          padding-left: 20px;
+        }
+        li {
+          font-size: 14px;
+          line-height: 1.5rem;
+        }
+        .portfolio-overlay-footer {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          bottom: 0;
+          height: 100px;
+          width: 100%;
+          text-align: center;
+          margin: 0 -20px;
+          padding: 20px;
+          border-top: 1px solid #ccc;
+          .link {
+            display: block;
+            height: 4rem;
+            width: 4rem;
+            margin-right: 1rem;
+            line-height: 4.3rem;
+            font-size: 1.5rem;
+            background-color: $primary;
+            transition: background-color 0.15s ease-in-out;
+            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+            &:hover {
+              background-color: darken($primary, 10%);
+              text-decoration: none;
+            }
+          }
         }
       }
     }
