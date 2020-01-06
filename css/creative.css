@@ -9586,7 +9586,8 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
+  border-bottom: 1px solid #ddd;
 }
 
 #mainNav {
@@ -9701,6 +9702,8 @@ header.masthead h1 {
 
 #portfolio .portfolio-item .portfolio-card {
   background-color: #fff;
+  height: 100%;
+  box-shadow: 0 1px 3px rgba(1, 1, 1, 0.2);
 }
 
 #portfolio .portfolio-item .portfolio-card img {
@@ -9710,10 +9713,11 @@ header.masthead h1 {
 }
 
 #portfolio .portfolio-item .portfolio-card .portfolio-card-content {
-  padding: 10px;
+  padding: 16px;
 }
 
 #portfolio .portfolio-item .portfolio-card .portfolio-card-content p {
+  font-size: 14px;
   margin: 1rem 0;
 }
 
@@ -9760,14 +9764,23 @@ header.masthead h1 {
   cursor: pointer;
 }
 
+#portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content .portfolio-overlay-header span:hover {
+  color: #777;
+}
+
 #portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content .portfolio-overlay-header h3 {
+  color: #391039;
   font-size: 1.25rem;
 }
 
 #portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content .portfolio-overlay-body {
   margin: 0;
   padding-left: 20px;
-  list-style-type: lower-alpha;
+}
+
+#portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content li {
+  font-size: 14px;
+  line-height: 1.5rem;
 }
 
 #portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content .portfolio-overlay-footer {
