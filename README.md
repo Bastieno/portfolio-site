@@ -4,7 +4,7 @@ This is a one page portfolio site showing my work.
 
 ## Preview
 
-![Portfolio Preview](https://raw.githubusercontent.com/Bastieno/portfolio-site/gh-pages/img/preview.png)
+![Portfolio Preview](https://raw.githubusercontent.com/Bastieno/portfolio-site/master/img/preview.png)
 
 ## Copyright and License
 
