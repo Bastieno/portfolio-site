@@ -1,0 +1,30 @@
+#skills {
+  .row {
+    margin-bottom: 3rem;
+    .skills-card {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(1,1,1,.2);
+      .skills-card-header {
+        color: #705548;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+        padding: 0 0 20px;
+        margin: 15px 0 30px;
+        font-size: 31.92px;
+        line-height: 2.508rem;
+        h3 {
+          margin: 1.14rem 0 0.912rem 0;
+          font-weight: normal;
+        }
+      }
+      .skills-card-body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
