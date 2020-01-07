@@ -3,13 +3,20 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - #{$navbar-height});
   // background: linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%), url('../img/bg-masthead.jpg');
-  background-image: linear-gradient(rgba(56, 16, 57, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1559574139-122bfee565f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+  background-image: linear-gradient(rgba(56, 16, 57, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bg-masthead.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  p#text-type > .txt {
+    border-right: 0.2rem solid #fff;
+    margin-right: 0.2rem;
+  }
   h1 {
-    font-size: 2.25rem;
+    font-size: 3rem;
+    font-family: 'Saira Extra Condensed', Helvetica, sans-serif;
+    // color: #2b2b2b;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
   }
   @include media-breakpoint-up(lg) {
     height: 100vh;
@@ -17,15 +24,18 @@ header.masthead {
     padding-top: $navbar-height;
     padding-bottom: 0;
     p {
-      font-size: 1.15rem;
+      font-family: $typewriter-font-family;
+      text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+      white-space: nowrap;
+      font-size: 2.1rem;
     }
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
   @include media-breakpoint-up(xl) {
     h1 {
-      font-size: 3.5rem;
+      font-size: 5rem;
     }
   }
 }
